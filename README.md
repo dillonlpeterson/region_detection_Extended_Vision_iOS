@@ -8,7 +8,7 @@ There are several approaches i tried, none of which was fully succesful (at some
 * i think the problem here was with setting up bazel
 I couldn't get this part of code to run 
 
-'''
+```
 bazel run -c opt tensorflow/lite/toco:toco -- \
 --input_file=C:/tensorflow1/models/research/object_detection/inference_graph_region_detection/exported_model_directory/tflite_graph.pb \
 --output_file=C:/tensorflow1/models/research/object_detection/inference_graph_region_detection/exported_model_directory/detect.tflite \
@@ -20,7 +20,7 @@ bazel run -c opt tensorflow/lite/toco:toco -- \
 --std_values=128 \
 --change_concat_input_ranges=false \
 --allow_custom_ops
-...
+```
 
 2) https://www.tensorflow.org/lite/convert/python_api
 * i tried several approaches from here - using tensorflow 1.2. -> tf.contrib.lite.TocoConverter
