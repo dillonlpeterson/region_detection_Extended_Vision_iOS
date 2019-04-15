@@ -30,8 +30,8 @@ ISSUE RESOLVED:
 
 To generate .tflite file:
 
-export OUTPUT_DIR='path/to/tflite_graph.pb'
-cd tensorflow 
+export OUTPUT_DIR='path/to/tflite_graph.pb' \\
+cd tensorflow \\
 make convert 
 
 This will save detect.tflite file in OUTPUT_DIR. Also, this assumes that tflite_graph.pb is stored in OUTPUT_DIR.
